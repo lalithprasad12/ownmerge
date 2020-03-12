@@ -4,8 +4,7 @@ node
 {
     stage('Checkout')
     {
-        checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'PAC1', url: 'git@github.com:lalithprasad12/maven.git']]])
-        workspace=pwd()
+        echo "Checkout QA"
 
     }
 
