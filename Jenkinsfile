@@ -4,7 +4,7 @@ node
 {
     stage('Checkout')
     {
-        echo "Checkout QA"
+        checkout([$class: 'GitSCM', branches: [[name: '*/qa']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'PAC1', url: 'https://github.com/lalithprasad12/ownmerge.git']]])
 
     }
 
